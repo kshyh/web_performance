@@ -1,4 +1,5 @@
 @import url("./reset.css");
+@import url("./sprite.css");
 
 @font-face {
     font-family: 'Raleway';
@@ -401,6 +402,18 @@ body {
         right: 400px;
         transform: rotate(-1080deg);
     }
+}
+
+.actions {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 0 16px;
+}
+
+.actions__action a {
+    display: block;
+    width: 24px;
+    height: 24px;
 }
 
 /* footer */
