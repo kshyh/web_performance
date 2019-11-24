@@ -13,7 +13,8 @@
     "generate:woff": "ls fonts/**/*.ttf | sed -e 's/\\.ttf//g' | xargs -I % ttf2woff %.ttf %.woff",
     "generate:woff2": "ls fonts/**/*.ttf | sed -e 's/\\.ttf//g' | xargs -I % sh -c \"cat %.ttf | ttf2woff2 > %.woff2\"",
     "fonts:generate": "npm-run-all --parallel generate:*",
-    "fonts:subset": "node scripts/fontSubset.js"
+    "fonts:subset": "node scripts/fontSubset.js",
+    "optimise:jpeg": "node scripts/optimiseJpeg.js"
   },
   "author": "Mateusz Kwasniewski <kwasniewski.mateusz@gmail.com>",
   "license": "ISC",
@@ -23,6 +24,8 @@
   },
   "devDependencies": {
     "fontmin": "0.9.8",
+    "imagemin": "7.0.1",
+    "imagemin-mozjpeg": "8.0.0",
     "npm-run-all": "4.1.5",
     "parcel-bundler": "1.12.4",
     "ttf2eot": "2.0.0",
