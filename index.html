@@ -57,18 +57,34 @@
         <p>Here are some of our recent projects</p>
         <ul class="portfolio__list">
             <li class="portfolio__item">
-                <img alt="media" src="images/portfolio1@2x.jpg"/>
+                <picture>
+                    <source srcset="images/portfolio1.webp 1x, images/portfolio1@2x.webp 2x" type="image/webp" />
+                    <source srcset="images/portfolio1.jpg 1x, images/portfolio1@2x.jpg 2x" type="image/jpeg" />
+                    <img alt="media" src="images/portfolio1.jpg" srcset="images/portfolio1.jpg 1x, images/portfolio1@2x.jpg 2x"/>
+                </picture>
 
             </li>
             <li class="portfolio__item">
-                <img alt="internet provisioning" src="images/portfolio2@2x.jpg"/>
+                <picture>
+                    <source srcset="images/portfolio2.webp 1x, images/portfolio2@2x.webp 2x" type="image/webp" />
+                    <source srcset="images/portfolio2.jpg 1x, images/portfolio2@2x.jpg 2x" type="image/jpeg" />
+                    <img alt="internet provisioning" src="images/portfolio2.jpg" />
+                </picture>
 
             </li>
             <li class="portfolio__item">
-                <img alt="travelers profiles" src="images/portfolio3@2x.jpg"/>
+                <picture>
+                    <source srcset="images/portfolio3.webp 1x, images/portfolio3@2x.webp 2x" type="image/webp" />
+                    <source srcset="images/portfolio3.jpg 1x, images/portfolio3@2x.jpg 2x" type="image/jpeg" />
+                    <img alt="travelers profiles" src="images/portfolio3.jpg" />
+                </picture>
             </li>
             <li class="portfolio__item">
-                <img alt="javascript training" src="images/portfolio4@2x.jpg"/>
+                <picture>
+                    <source srcset="images/portfolio4.webp 1x, images/portfolio4@2x.webp 2x" type="image/webp" />
+                    <source srcset="images/portfolio4.jpg 1x, images/portfolio4@2x.jpg 2x" type="image/jpeg" />
+                    <img alt="javascript training" src="images/portfolio4.jpg" />
+                </picture>
             </li>
         </ul>
     </aside>
@@ -87,63 +103,118 @@
         <ul>
             <li>
                 <div class="services__service">
-                    <img class="services__image" src="images/agile@2x.jpeg">
+                    <picture>
+                        <source media="(min-width: 500px)" srcset="images/agile.webp 800w, images/agile@2x.webp 1600w" type="image/webp">
+                        <source media="(min-width: 500px)" srcset="images/agile.jpeg 800w, images/agile@2x.jpeg 1600w" type="image/jpeg">
+                        <source srcset="images/agile.webp 1x, images/agile@2x.webp 2x" type="image/webp">
+                        <source srcset="images/agile.jpeg 1x, images/agile@2x.jpeg 2x" type="image/jpeg">
+                        <img src="images/agile.jpeg">
+                    </picture>
 
                     <h2 class="services__overlay"><span>Agile Software Development</span></h2>
                 </div>
             </li>
             <li>
                 <div class="services__service">
-                    <img class="services__image" src="images/lean@2x.jpeg">
+                    <picture>
+                        <source media="(min-width: 500px)" srcset="images/lean.webp 800w, images/lean@2x.webp 1600w" type="image/webp">
+                        <source media="(min-width: 500px)" srcset="images/lean.jpeg 800w, images/lean@2x.jpeg 1600w" type="image/jpeg">
+                        <source srcset="images/lean.webp 1x, images/lean@2x.webp 2x" type="image/webp">
+                        <source srcset="images/lean.jpeg 1x, images/lean@2x.jpeg 2x" type="image/jpeg">
+                        <img src="images/lean.jpeg">
+                    </picture>
 
                     <h2 class="services__overlay"><span>Lean Product Development</span></h2>
                 </div>
             </li>
             <li>
                 <div class="services__service">
-                    <img class="services__image" src="images/programming@2x.jpg">
+                    <picture>
+                        <source media="(min-width: 500px)" srcset="images/programming.webp 800w, images/programming@2x.webp 1600w" type="image/webp">
+                        <source media="(min-width: 500px)" srcset="images/programming.jpg 800w, images/programming@2x.jpg 1600w" type="image/jpeg">
+                        <source srcset="images/programming.webp 1x, images/programming@2x.webp 2x" type="image/webp">
+                        <source srcset="images/programming.jpg 1x, images/programming@2x.jpg 2x" type="image/jpeg">
+                        <img src="images/programming.jpg">
+                    </picture>
 
                     <h2 class="services__overlay"><span>Java, JS, Groovy, Elm</span></h2>
                 </div>
             </li>
             <li>
                 <div class="services__service">
-                    <img class="services__image" src="images/optimization@2x.jpeg">
+                    <picture>
+                        <source media="(min-width: 500px)" srcset="images/optimization.webp 800w, images/optimization@2x.webp 1600w" type="image/webp">
+                        <source media="(min-width: 500px)" srcset="images/optimization.jpeg 800w, images/optimization@2x.jpeg 1600w" type="image/jpeg">
+                        <source srcset="images/optimization.webp 1x, images/optimization@2x.webp 2x" type="image/webp">
+                        <source srcset="images/optimization.jpeg 1x, images/optimization@2x.jpeg 2x" type="image/jpeg">
+                        <img src="images/optimization.jpeg">
+                    </picture>
 
                     <h2 class="services__overlay"><span>Web Performance Optimization</span></h2>
                 </div>
             </li>
             <li>
                 <div class="services__service">
-                    <img class="services__image" src="images/delivery@2x.jpeg">
+                    <picture>
+                        <source media="(min-width: 500px)" srcset="images/delivery.webp 800w, images/delivery@2x.webp 1600w" type="image/webp">
+                        <source media="(min-width: 500px)" srcset="images/delivery.jpeg 800w, images/delivery@2x.jpeg 1600w" type="image/jpeg">
+                        <source srcset="images/delivery.webp 1x, images/delivery@2x.webp 2x" type="image/webp">
+                        <source srcset="images/delivery.jpeg 1x, images/delivery@2x.jpeg 2x" type="image/jpeg">
+                        <img src="images/delivery.jpeg">
+                    </picture>
+
 
                     <h2 class="services__overlay"><span>Continuous Delivery and Deployment</span></h2>
                 </div>
             </li>
             <li>
                 <div class="services__service">
-                    <img class="services__image" src="images/cloud@2x.jpeg">
+                    <picture>
+                        <source media="(min-width: 500px)" srcset="images/cloud.webp 800w, images/cloud@2x.webp 1600w" type="image/webp">
+                        <source media="(min-width: 500px)" srcset="images/cloud.jpeg 800w, images/cloud@2x.jpeg 1600w" type="image/jpeg">
+                        <source srcset="images/cloud.webp 1x, images/cloud@2x.webp 2x" type="image/webp">
+                        <source srcset="images/cloud.jpeg 1x, images/cloud@2x.jpeg 2x" type="image/jpeg">
+                        <img src="images/cloud.jpeg">
+                    </picture>
 
                     <h2 class="services__overlay"><span>Cloud Native Software Development</span></h2>
                 </div>
             </li>
             <li>
                 <div class="services__service">
-                    <img class="services__image" src="images/web@2x.jpeg">
+                    <picture>
+                        <source media="(min-width: 500px)" srcset="images/web.webp 800w, images/web@2x.webp 1600w" type="image/webp">
+                        <source media="(min-width: 500px)" srcset="images/web.jpeg 800w, images/web@2x.jpeg 1600w" type="image/jpeg">
+                        <source srcset="images/web.webp 1x, images/web@2x.webp 2x" type="image/webp">
+                        <source srcset="images/web.jpeg 1x, images/web@2x.jpeg 2x" type="image/jpeg">
+                        <img src="images/web.jpeg">
+                    </picture>
 
                     <h2 class="services__overlay"><span>Everything Web</span></h2>
                 </div>
             </li>
             <li>
                 <div class="services__service">
-                    <img class="services__image" src="images/functional@2x.jpg">
+                    <picture>
+                        <source media="(min-width: 500px)" srcset="images/functional.webp 800w, images/functional@2x.webp 1600w" type="image/webp">
+                        <source media="(min-width: 500px)" srcset="images/functional.jpg 800w, images/functional@2x.jpg 1600w" type="image/jpg">
+                        <source srcset="images/functional.webp 1x, images/functional@2x.webp 2x" type="image/webp">
+                        <source srcset="images/functional.jpg 1x, images/functional@2x.jpg 2x" type="image/jpg">
+                        <img src="images/functional.jpg">
+                    </picture>
 
                     <h2 class="services__overlay"><span>Functional Programming</span></h2>
                 </div>
             </li>
             <li>
                 <div class="services__service">
-                    <img class="services__image" src="images/presentations@2x.jpeg">
+                    <picture>
+                        <source media="(min-width: 500px)" srcset="images/presentations.webp 800w, images/presentations@2x.webp 1600w" type="image/webp">
+                        <source media="(min-width: 500px)" srcset="images/presentations.jpeg 800w, images/presentations@2x.jpeg 1600w" type="image/jpeg">
+                        <source srcset="images/presentations.webp 1x, images/presentations@2x.webp 2x" type="image/webp">
+                        <source srcset="images/presentations.jpeg 1x, images/presentations@2x.jpeg 2x" type="image/jpeg">
+                        <img src="images/presentations.jpeg">
+                    </picture>
 
                     <h2 class="services__overlay"><span>Technical Presentations</span></h2>
                 </div>
