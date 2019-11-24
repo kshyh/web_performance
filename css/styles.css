@@ -4,52 +4,52 @@
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 400;
-    src: local('Raleway'),
-    local('Raleway-Regular'),
+    src:
     url("../fonts/latin/Raleway-Regular.woff2") format("woff2"),
     url("../fonts/latin/Raleway-Regular.woff") format("woff"),
     url("../fonts/latin/Raleway-Regular.eot") format("embedded-opentype"),
     url("../fonts/latin/Raleway-Regular.ttf") format("truetype");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 400;
-    src: local('Raleway'),
-    local('Raleway-Regular'),
+    src:
     url("../fonts/latin-ext/Raleway-Regular.woff2") format("woff2"),
     url("../fonts/latin-ext/Raleway-Regular.woff") format("woff"),
     url("../fonts/latin-ext/Raleway-Regular.eot") format("embedded-opentype"),
     url("../fonts/latin-ext/Raleway-Regular.ttf") format("truetype");
     unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
-    src: local('Raleway Bold'),
-    local('Raleway-Bold'),
+    src:
     url("../fonts/latin/Raleway-Bold.woff2") format("woff2"),
     url("../fonts/latin/Raleway-Bold.woff") format("woff"),
     url("../fonts/latin/Raleway-Bold.eot") format("embedded-opentype"),
     url("../fonts/latin/Raleway-Bold.ttf") format("truetype");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
-    src: local('Raleway Bold'),
-    local('Raleway-Bold'),
+    src:
     url("../fonts/latin-ext/Raleway-Bold.woff2") format("woff2"),
     url("../fonts/latin-ext/Raleway-Bold.woff") format("woff"),
     url("../fonts/latin-ext/Raleway-Bold.eot") format("embedded-opentype"),
     url("../fonts/latin-ext/Raleway-Bold.ttf") format("truetype");
     unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+    font-display: swap;
 }
 
 body {
