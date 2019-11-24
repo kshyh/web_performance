@@ -5,7 +5,6 @@ $(function onDomContentLoaded() {
     });
 
     parallax();
-    loadFonts();
 
     window.addEventListener('scroll', parallax);
     window.addEventListener('resize', parallax);

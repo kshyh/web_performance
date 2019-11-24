@@ -52,12 +52,8 @@
     font-display: swap;
 }
 
-.fonts-loaded body {
-    font-family: "Raleway";
-}
-
 body {
-    font-family: Helvetica, sans-serif;
+    font-family: Releway, Helvetica, sans-serif;
     color: #595241;
 
     line-height: 1.4em;
