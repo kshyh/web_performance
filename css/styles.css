@@ -241,7 +241,7 @@ body {
 /*https://css-tricks.com/text-blocks-over-image/*/
 .services__service {
     position: relative;
-
+    background-color: lightgrey;
     margin-bottom: 1em;
     /*The image has a 16/9 ratio. Until the image has loaded
   we need to reserve some space so the page won't reflow.
