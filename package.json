@@ -8,7 +8,11 @@
     "build": "parcel build index.html",
     "start": "node server.js",
     "prod": "npm-run-all build start",
-    "dev": "npm-run-all --parallel watch start"
+    "dev": "npm-run-all --parallel watch start",
+    "generate:eot": "ls fonts/*.ttf | sed -e 's/\\.ttf//g' | xargs -I % ttf2eot %.ttf %.eot",
+    "generate:woff": "ls fonts/*.ttf | sed -e 's/\\.ttf//g' | xargs -I % ttf2woff %.ttf %.woff",
+    "generate:woff2": "ls fonts/*.ttf | sed -e 's/\\.ttf//g' | xargs -I % sh -c \"cat %.ttf | ttf2woff2 > %.woff2\"",
+    "fonts:generate": "npm-run-all --parallel generate:*"
   },
   "author": "Mateusz Kwasniewski <kwasniewski.mateusz@gmail.com>",
   "license": "ISC",
@@ -18,6 +22,9 @@
   },
   "devDependencies": {
     "npm-run-all": "4.1.5",
-    "parcel-bundler": "1.12.4"
+    "parcel-bundler": "1.12.4",
+    "ttf2eot": "2.0.0",
+    "ttf2woff": "2.0.1",
+    "ttf2woff2": "3.0.0"
   }
 }
