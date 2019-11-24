@@ -4,13 +4,20 @@
   "description": "Web Performance Optimization Workshop ",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "watch": "parcel watch index.html",
+    "build": "parcel build index.html",
+    "start": "node server.js",
+    "prod": "npm-run-all build start",
+    "dev": "npm-run-all --parallel watch start"
   },
   "author": "Mateusz Kwasniewski <kwasniewski.mateusz@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "compression": "1.7.4",
     "express": "4.16.3"
+  },
+  "devDependencies": {
+    "npm-run-all": "4.1.5",
+    "parcel-bundler": "1.12.4"
   }
 }
