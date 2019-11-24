@@ -184,13 +184,21 @@ body {
     font-size: 1.3em;
 }
 
-.mission__image {
-    background-image: url(../images/bench@2x.jpeg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 100%;
-    height: 0;
-    padding-top: 25%;
+@media (min-width: 750px) {
+    .mission__image {
+        background-image: url(../images/bench.jpeg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100%;
+        height: 0;
+        padding-top: 25%;
+    }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) and (min-width: 750px) {
+    .mission__image {
+        background-image: url(../images/bench@2x.jpeg);
+    }
 }
 
 /* welcome and main */
