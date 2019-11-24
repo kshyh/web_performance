@@ -5,6 +5,7 @@ $(function onDomContentLoaded() {
     });
 
     parallax();
+    loadFonts();
 
     window.addEventListener('scroll', parallax);
     window.addEventListener('resize', parallax);
@@ -31,6 +32,17 @@ function parallax() {
             var serviceHeight = $(".services__service").outerHeight();
 
             $(this).css({top: serviceHeight * currentPosition / bodyHeight + "px"});
+
+        });
+    }
+}
+
+function loadFonts() {
+    if(document.fonts) {
+        document.fonts.load("1em Raleway");
+
+        document.fonts.ready.then(function(fontFaceSet) {
+            document.documentElement.className += " fonts-loaded";
 
         });
     }
