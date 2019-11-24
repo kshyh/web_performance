@@ -74,8 +74,12 @@
     </aside>
 
 
-    <section class="main-content__section">
-        <img src="images/working.jpeg" srcset="images/working.jpeg 640w, images/working@2x.jpeg 1280w">
+    <section class="main-content__section working">
+        <picture>
+            <source media="(min-width: 500px)" srcset="images/working.jpeg 800w, images/working@2x.jpeg 1600w">
+            <source srcset="images/working_vertical.jpeg 1x, images/working_vertical@2x.jpeg 2x">
+            <img src="images/working.jpeg" >
+        </picture>
     </section>
 
     <section class="main-content__section services">
