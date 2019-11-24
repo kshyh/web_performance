@@ -10,6 +10,7 @@
   "author": "Mateusz Kwasniewski <kwasniewski.mateusz@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "compression": "1.7.4",
     "express": "4.16.3"
   }
 }
