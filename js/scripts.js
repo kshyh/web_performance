@@ -44,16 +44,17 @@ function ajax(config) {
 }
 
 function parallax() {
+    if(document.querySelectorAll(".services").length === 0) return;
     var scroll = window.scrollY + window.innerHeight;
-    var servicesOffset = $(".services").offset().top;
+    var servicesOffset = document.querySelector(".services").getBoundingClientRect().top + document.body.scrollTop;
 
     if (scroll >= servicesOffset) {
-        $(".services__overlay").each(function (evt) {
+        [].slice.call(document.querySelectorAll(".services__overlay")).forEach(function (element) {
             var currentPosition = window.scrollY + window.innerHeight / 2;
-            var bodyHeight = $("body").outerHeight();
-            var serviceHeight = $(".services__service").outerHeight();
+            var bodyHeight = document.querySelector("body").offsetHeight;
+            var serviceHeight = document.querySelector(".services__service").offsetHeight;
 
-            $(this).css({top: serviceHeight * currentPosition / bodyHeight + "px"});
+            element.style.top = serviceHeight * currentPosition / bodyHeight + "px";
 
         });
     }
