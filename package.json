@@ -17,12 +17,15 @@
     "optimise:jpeg": "node scripts/optimiseJpeg.js",
     "generate:webp": "node scripts/jpegToWebP.js",
     "generate:sprites": "svg-sprite --css --css-render-css --css-dest=css --css-sprite=../images/icons.svg --css-layout=diagonal images/icons/*.svg",
-    "print:selectors": "longest-selectors css/styles.css"
+    "print:selectors": "longest-selectors css/styles.css",
+    "critical": "node scripts/critical.js",
+    "build": "parcel build index.html && npm run critical"
   },
   "author": "Mateusz Kwasniewski <kwasniewski.mateusz@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "compression": "1.7.4",
+    "critical": "2.0.0-23",
     "express": "4.16.3"
   },
   "devDependencies": {
