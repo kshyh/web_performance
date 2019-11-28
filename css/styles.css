@@ -202,8 +202,7 @@ body {
     }
 }
 
-/* welcome and main */
-.welcome__header {
+.main-content__section-header {
     margin-bottom: 1em;
 
     color: #8A0917;
@@ -223,15 +222,6 @@ body {
 .portfolio__item {
     width: 50%;
     padding: 0.2em;
-}
-
-.portfolio__header {
-    margin-bottom: 1em;
-
-    color: #8A0917;
-
-    font-size: 1.25em;
-    font-weight: 700;
 }
 
 .working img {
@@ -298,15 +288,6 @@ body {
     }
 }
 
-.services__header {
-    margin-bottom: 1em;
-
-    color: #8A0917;
-
-    font-size: 1.25em;
-    font-weight: 700;
-}
-
 /* testimonials */
 .testimonial_quote {
     background: #f9f9f9;
@@ -329,15 +310,6 @@ body {
 
 .testimonial_quote p {
     display: inline;
-}
-
-.testimonials__header {
-    margin-bottom: 1em;
-
-    color: #8A0917;
-
-    font-size: 1.25em;
-    font-weight: 700;
 }
 
 /* desert animation */
