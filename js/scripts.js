@@ -12,16 +12,37 @@ $(function onDomContentLoaded() {
     window.addEventListener('scroll', parallax);
     window.addEventListener('resize', parallax);
 
-    $(".footer").click(function() {
-        $.ajax({
+    document.querySelector(".footer").addEventListener("click", function() {
+        ajax({
             url: "https://api.chucknorris.io/jokes/random",
             success: function(result) {
-                $(".footer__text").text(result.value);
+                document.querySelector(".footer__text").textContent = result.value;
             },
             async: false
         });
     });
 });
+
+function ajax(config) {
+    var request = new XMLHttpRequest();
+    request.open('GET', config.url, config.async);
+
+    request.onload = function() {
+        if (request.status >= 200 && request.status < 400) {
+            // Success!
+            config.success(JSON.parse(request.responseText));
+        } else {
+            // We reached our target server, but it returned an error
+
+        }
+    };
+
+    request.onerror = function() {
+        // There was a connection error of some sort
+    };
+
+    request.send();
+}
 
 function parallax() {
     var scroll = window.scrollY + window.innerHeight;
