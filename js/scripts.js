@@ -2,9 +2,8 @@ var $ = require("jquery");
 var Blazy = require("blazy");
 
 $(function onDomContentLoaded() {
-    $(".header__nav-items").hide();
-    $(".header__nav-icon").click(function toggleNavigation(e) {
-        $(".header__nav-items").slideToggle();
+    document.querySelector(".header__nav-icon").addEventListener("click", function toggleNavigation(e) {
+        document.querySelector(".header__nav-items").classList.toggle("header__nav-items--show");
     });
 
     parallax();
