@@ -360,7 +360,7 @@ body {
     }
 }
 
-.desert .desert__animation .desert__tumbleweed {
+.desert__tumbleweed {
     width: 50px;
     height: 56px;
     background-image: url("../images/tumbleweed.png");
@@ -371,25 +371,25 @@ body {
     animation: tumbleweed 5s ease-in 0s infinite;
 }
 
-.desert .desert__animation .desert__tumbleweed.desert__tumbleweed--variant1 {
+.desert__tumbleweed.desert__tumbleweed--variant1 {
     top: 340px;
     right: -100px;
     animation-duration: 4s;
 }
 
-.desert .desert__animation .desert__tumbleweed.desert__tumbleweed--variant2 {
+.desert__tumbleweed.desert__tumbleweed--variant2 {
     top: 300px;
     right: -90px;
     animation-duration: 6s;
 }
 
-.desert .desert__animation .desert__tumbleweed.desert__tumbleweed--variant3 {
+.desert__tumbleweed.desert__tumbleweed--variant3 {
     top: 400px;
     right: -80px;
     animation-duration: 5s;
 }
 
-.desert .desert__animation .desert__tumbleweed.desert__tumbleweed--variant4 {
+.desert__tumbleweed.desert__tumbleweed--variant4 {
     top: 370px;
     right: -60px;
     animation-duration: 6.5s;
