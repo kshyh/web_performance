@@ -5,7 +5,7 @@ var app = express();
 
 app.use(shrinkRay());
 // app.use(compression());
-app.use(express.static("dist"));
+app.use(express.static("dist", {maxAge: "10s"}));
 
 var port = process.env.PORT || 8080;
 app.listen(port, function() {
