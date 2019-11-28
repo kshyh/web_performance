@@ -1,7 +1,6 @@
-var $ = require("jquery");
 var Blazy = require("blazy");
 
-$(function onDomContentLoaded() {
+(function init() {
     document.querySelector(".header__nav-icon").addEventListener("click", function toggleNavigation(e) {
         document.querySelector(".header__nav-items").classList.toggle("header__nav-items--show");
     });
@@ -21,7 +20,7 @@ $(function onDomContentLoaded() {
             async: false
         });
     });
-});
+})();
 
 function ajax(config) {
     var request = new XMLHttpRequest();
