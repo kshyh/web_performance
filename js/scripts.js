@@ -1,4 +1,4 @@
-var Blazy = require("blazy");
+var lazyLoadImages = require("./lazyLoadImages");
 
 (function init() {
     document.querySelector(".header__nav-icon").addEventListener("click", function toggleNavigation(e) {
@@ -69,12 +69,4 @@ function loadFonts() {
 
         });
     }
-}
-
-function lazyLoadImages() {
-    var bLazy = new Blazy({
-        selector: ".lazy",
-        container: "body",
-        loadInvisible: true
-    });
 }
