@@ -1,5 +1,5 @@
 var lazyLoadImages = require("./lazyLoadImages");
-var quicklink  = require("quicklink");
+require("instant.page");
 
 (function init() {
     document.querySelector(".header__nav-icon").addEventListener("click", function toggleNavigation(e) {
@@ -8,7 +8,6 @@ var quicklink  = require("quicklink");
 
     parallax();
     lazyLoadImages();
-    quicklink.listen();
 
     window.addEventListener('scroll', parallax);
     window.addEventListener('resize', parallax);
