@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "watch": "parcel watch index.html",
-    "build": "parcel build index.html",
+    "build": "parcel build index.html && npm run critical",
     "start": "node server.js",
     "prod": "npm-run-all build start",
     "dev": "npm-run-all --parallel watch start",
@@ -18,15 +18,16 @@
     "generate:webp": "node scripts/jpegToWebP.js",
     "generate:sprites": "svg-sprite --css --css-render-css --css-dest=css --css-sprite=../images/icons.svg --css-layout=diagonal images/icons/*.svg",
     "print:selectors": "longest-selectors css/styles.css",
-    "critical": "node scripts/critical.js",
-    "build": "parcel build index.html && npm run critical"
+    "critical": "node scripts/critical.js"
   },
   "author": "Mateusz Kwasniewski <kwasniewski.mateusz@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "blazy": "1.8.2",
     "compression": "1.7.4",
     "critical": "2.0.0-23",
-    "express": "4.16.3"
+    "express": "4.16.3",
+    "jquery": "3.4.1"
   },
   "devDependencies": {
     "fontmin": "0.9.8",

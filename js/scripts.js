@@ -1,3 +1,6 @@
+var $ = require("jquery");
+var Blazy = require("blazy");
+
 $(function onDomContentLoaded() {
     $(".header__nav-items").hide();
     $(".header__nav-icon").click(function toggleNavigation(e) {
