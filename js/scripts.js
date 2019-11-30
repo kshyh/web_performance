@@ -44,8 +44,16 @@ function ajax(config) {
     request.send();
 }
 
+var animationInProgress = false;
 function onScroll() {
-    requestAnimationFrame(parallax);
+    if(animationInProgress) return;
+
+    animationInProgress = true;
+
+    requestAnimationFrame(function() {
+        parallax();
+        animationInProgress = false;
+    });
 }
 
 function parallax() {
