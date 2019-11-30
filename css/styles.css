@@ -278,6 +278,7 @@ body {
     left: 0;
     width: 100%;
     z-index: 1;
+    will-change: transform;
 }
 
 .services__overlay span {

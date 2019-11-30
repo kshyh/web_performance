@@ -67,7 +67,7 @@ function parallax() {
 
     if (scroll >= servicesOffset) {
         [].slice.call(document.querySelectorAll(".services__overlay")).forEach(function (element) {
-            element.style.top = serviceHeight * currentPosition / bodyHeight + "px";
+            element.style.transform = "translateY(" + serviceHeight * currentPosition / bodyHeight + "px)";
 
         });
     }
