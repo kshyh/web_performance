@@ -1,0 +1,12 @@
+{
+  "median": {
+    "firstView": {
+      "SpeedIndex": 1500,
+      "firstMeaningfulPaint": 800,
+      "TTFB": 300,
+      "cpu.Idle": 1500,
+      "requests": 30,
+      "loadTime": 2000
+    }
+  }
+}
