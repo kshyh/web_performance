@@ -63,7 +63,11 @@
                 <picture>
                     <source srcset="images/portfolio1.webp 1x, images/portfolio1@2x.webp 2x" type="image/webp" />
                     <source srcset="images/portfolio1.jpg 1x, images/portfolio1@2x.jpg 2x" type="image/jpeg" />
-                    <img alt="media" src="images/portfolio1.jpg" srcset="images/portfolio1.jpg 1x, images/portfolio1@2x.jpg 2x"/>
+                    <img alt="media" onload="performance.clearMarks('portfolio_loaded_img'); performance.mark('portfolio_loaded_img')" src="images/portfolio1.jpg" srcset="images/portfolio1.jpg 1x, images/portfolio1@2x.jpg 2x"/>
+                    <script>
+                        performance.clearMarks("portfolio_loaded_img");
+                        performance.mark("portfolio_loaded_img");
+                    </script>
                 </picture>
 
             </li>
