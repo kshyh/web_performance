@@ -1,6 +1,5 @@
 module.exports = function lazyLoadImages() {
     var targets = document.querySelectorAll("img[data-src],source[data-srcset]");
-    console.log(targets.length);
     createObserver(targets);
 };
 
