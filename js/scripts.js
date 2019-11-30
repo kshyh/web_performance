@@ -9,7 +9,7 @@ require("instant.page");
     parallax();
     lazyLoadImages();
 
-    window.addEventListener('scroll', parallax);
+    window.addEventListener('scroll', onScroll, {passive: true});
     window.addEventListener('resize', parallax);
 
     document.querySelector(".footer").addEventListener("click", function() {
@@ -42,6 +42,10 @@ function ajax(config) {
     };
 
     request.send();
+}
+
+function onScroll() {
+    requestAnimationFrame(parallax);
 }
 
 function parallax() {
