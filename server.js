@@ -23,7 +23,11 @@ app.use(express.static("dist", {
             case "image/jpeg":
             case "image/svg+xml":
             case "image/webp":
-                res.setHeader("Cache-Control", "max-age=" + (30 * 24 * 60 * 60));
+                if(path.indexOf("serviceworker.js") !== -1) {
+                    res.setHeader("Cache-Control", "no-cache"); // revalidate SW
+                } else {
+                    res.setHeader("Cache-Control", "max-age=" + (30 * 24 * 60 * 60));
+                }
                 break;
         }
     }
