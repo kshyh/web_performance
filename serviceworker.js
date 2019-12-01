@@ -1,13 +1,15 @@
-console.log("SW script run at " + new Date());
+var version = 2;
+
+console.log("SW version "+ version +" script run at", new Date());
 
 self.addEventListener("install", function(event) {
-    console.log("SW installed at", new Date().toLocaleTimeString());
+    console.log("SW version " + version + " installed at", new Date());
 });
 
 self.addEventListener("activate", function(event) {
-    console.log("SW activated at", new Date().toLocaleTimeString());
+    console.log("SW  version " + version + " activated at", new Date());
 });
 
 self.addEventListener("fetch", function(event) {
-    console.log("Fetching", event.request);
+    // console.log("Fetching", event.request);
 });
