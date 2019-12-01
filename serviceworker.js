@@ -1,4 +1,5 @@
-var version = 2;
+var version = 19;
+var name = "wpo::" + version;
 
 console.log("SW version "+ version +" script run at", new Date());
 
@@ -9,10 +10,16 @@ self.addEventListener("install", function(event) {
 
 self.addEventListener("activate", function(event) {
     console.log("SW  version " + version + " activated at", new Date());
+    event.waitUntil(
+        caches.keys().then(function(cacheNames) {
+            return Promise.all(cacheNames.filter(function (cacheName) {
+                return cacheName !== name;
+            }).map(function (cacheName) {
+                return caches.delete(cacheName);
+            }));
+        })
+    );
 });
-
-var version = 17;
-var name = "wpo::" + version;
 
 self.addEventListener("fetch", function(event) {
     // open cache by name
