@@ -4,6 +4,7 @@ console.log("SW version "+ version +" script run at", new Date());
 
 self.addEventListener("install", function(event) {
     console.log("SW version " + version + " installed at", new Date());
+    self.skipWaiting();
 });
 
 self.addEventListener("activate", function(event) {
@@ -11,5 +12,5 @@ self.addEventListener("activate", function(event) {
 });
 
 self.addEventListener("fetch", function(event) {
-    // console.log("Fetching", event.request);
+    console.log("Fetching", event.request);
 });
