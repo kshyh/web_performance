@@ -4,6 +4,11 @@ var shrinkRay = require("shrink-ray-current");
 var mime = require("mime");
 var app = express();
 
+app.use(function(req, res, next) {
+    console.log(req.path, " requested at ", new Date());
+    next();
+});
+
 app.use(shrinkRay());
 // app.use(compression());
 app.use(express.static("dist", {
@@ -17,8 +22,8 @@ app.use(express.static("dist", {
             case "text/css":
             case "text/javascript":
             case "application/javascript":
-            case "font/font-woff":
-            case "font/font-woff2":
+            case "font/woff":
+            case "font/woff2":
             case "image/png":
             case "image/jpeg":
             case "image/svg+xml":
